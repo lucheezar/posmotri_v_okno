@@ -44,9 +44,6 @@ ol {
   margin: 133px 30px auto 30px;
   gap: 30px;
 }
-.result {
-
-}
 
 .result__video {
   width: 100%;
@@ -56,8 +53,8 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  width: 712px;
+  height: 387px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -116,7 +113,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  margin-block-start: 6px;
+  margin-block: 6px 5px;
 }
 
  .search-form__pseudo-checkbox {
@@ -163,7 +160,6 @@ input[type='checkbox']:checked + span::after {
   white-space: nowrap;
 }
 
-
 .button {
   background-color: transparent;
   color: #fff;
@@ -182,9 +178,8 @@ input[type='checkbox']:checked + span::after {
   color:#FFF;
 }
 
-.button::after {
-  content: '';
-  background-color: #FFF;
+.button:active {
+  background-color: #545050;
 }
 
 .button:focus-visible {
@@ -193,7 +188,13 @@ input[type='checkbox']:checked + span::after {
 }
 
 .search-form__submit-button {
-  padding: 6px 73.5px 6px 73.5px;
+  padding-block: 6px ;
+  padding-inline: 73.5px;
+}
+
+.more-button {
+  padding-inline: 146.5px;
+  padding-block:  6px ;
 }
 
 .title {
@@ -214,7 +215,7 @@ input[type='checkbox']:checked + span::after {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 30px;
+  gap: 25px;
 }
 
 .content__list {
@@ -237,10 +238,8 @@ input[type='checkbox']:checked + span::after {
 
 .content__card-link {
   display: block;
-  margin-block-start: 4px;
-  margin-block-end: 4px;
-  margin-inline-start: 4px;
-  margin-inline-end: 4px;
+  margin-block: 4px;
+  margin-inline: 4px;
 }
 
 .content__card-link_current {
@@ -253,11 +252,6 @@ input[type='checkbox']:checked + span::after {
   text-underline-position: under;
   color:#FFF;
 }
-/*  */
-.content__card-link:focus-visible {
-  outline: 1px solid #FFF ;
-}
-/*  */
 
 .content__video-card-title {
   font-family: Oswald;
@@ -267,7 +261,7 @@ input[type='checkbox']:checked + span::after {
   color: #fff;
   text-transform: uppercase;
   appearance: none;
-  margin-top: 1px;
+  margin-block-start: 1px;
 }
 
 .content__video-card-description {
@@ -291,10 +285,6 @@ input[type='checkbox']:checked + span::after {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  margin-block-start: 2px;
-  margin-block-end: 2px;
+  margin-block: 2px;
 }
 
-.more-button {
-  padding: 6px 145.5px;
-}
