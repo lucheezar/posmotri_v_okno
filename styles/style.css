@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+
 }
 
 h1,
@@ -76,7 +79,7 @@ ol {
   border-top: 1px #FFF solid;
   border-bottom: 1px #FFF solid;
   color: #FFF;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -106,7 +109,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -167,7 +170,7 @@ ol {
   color: #fff;
   cursor: pointer;
   border: 1px solid #FFF;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -200,7 +203,7 @@ ol {
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -220,12 +223,16 @@ ol {
   gap: 23px;
 }
 
+/* замена gap чтобы не было двойных отступов при нажатии .more-button */
+.content__list-item:not(:first-child) {
+  margin-block-start: 20px;
+}
+
 .content__list {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   height: 298px;
-  gap: 20px;
   position: relative;
 }
 
@@ -264,7 +271,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -272,15 +279,23 @@ ol {
   text-transform: uppercase;
   appearance: none;
   margin-block-start: 1px;
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
   color: #fff;
   appearance: none;
+  display: block;
+  width: 200px;
+  overflow: hidden;
 }
 
 .content__card-link {
