@@ -44,7 +44,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-block: 133px auto;
+  margin-block: auto;
   margin-inline: 30px;
   gap: 30px;
 }
@@ -242,10 +242,9 @@ ol {
   flex-direction: column;
   width: fit-content;
   height: 100%;
-  gap: 10px;
-  margin-block-start: 5px;
+  gap: 6px;
 }
-
+/*  */
 .content__card-link {
   display: block;
   margin-block: 4px;
@@ -275,10 +274,9 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 40px;
   color: #fff;
   text-transform: uppercase;
-  appearance: none;
   margin-block-start: 1px;
   display: block;
   width: 200px;
@@ -293,10 +291,6 @@ ol {
   font-weight: 400;
   line-height: 16.2px;
   color: #fff;
-  appearance: none;
-  display: block;
-  width: 200px;
-  overflow: hidden;
 }
 
 .content__card-link {
