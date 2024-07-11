@@ -18,7 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
 
 h1,
@@ -44,8 +44,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-block: auto;
-  margin-inline: 30px;
   gap: 30px;
 }
 
@@ -176,7 +174,7 @@ ol {
   line-height: 21.6px;
   text-align: center;
 }
-/*  */
+
 .button:hover {
   text-decoration: underline;
   text-underline-position: under;
@@ -222,6 +220,7 @@ ol {
   width: 100%;
   height: 100%;
   gap: 23px;
+  min-width: 400px;
 }
 
 /* замена gap чтобы не было двойных отступов при нажатии .more-button */
